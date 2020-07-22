@@ -1,0 +1,46 @@
+#include "resources.h"
+
+MAINICON ICON "res/icon.ico"
+
+MENU_ITEM_NEW ICON "/res/new.ico"
+MENU_ITEM_SHOW ICON "/res/show.ico"
+MENU_ITEM_CLOSE ICON "/res/close.ico"
+MENU_ITEM_BACK_COLOR ICON "/res/bg_color.ico"
+MENU_ITEM_TEXT_COLOR ICON "/res/fg_color.ico"
+MENU_ITEM_FONT ICON "/res/font1.ico"
+MENU_ITEM_SIZE ICON "/res/font2.ico"
+
+TrayMenu MENU
+{
+    POPUP "PostIt"
+    {
+        MENUITEM "New note", MENU_ITEM_NEW
+        MENUITEM "Show all", MENU_ITEM_SHOW
+        MENUITEM "Font", MENU_ITEM_FONT
+        POPUP "Text color"
+        {
+            MENUITEM "Yellow", MENU_ITEM_TEXT_COLOR_F+0
+            MENUITEM "Green", MENU_ITEM_TEXT_COLOR_F+1
+            MENUITEM "Pink", MENU_ITEM_TEXT_COLOR_F+2
+            MENUITEM "Purple", MENU_ITEM_TEXT_COLOR_F+3
+            MENUITEM "Blue", MENU_ITEM_TEXT_COLOR_F+4
+            MENUITEM "Gray", MENU_ITEM_TEXT_COLOR_F+5
+            MENUITEM "Charcoal", MENU_ITEM_TEXT_COLOR_F+6
+            MENUITEM "Black", MENU_ITEM_TEXT_COLOR_F+7
+            MENUITEM "White", MENU_ITEM_TEXT_COLOR_F+8
+        }
+        POPUP "Background color"
+        {
+            MENUITEM "Yellow", MENU_ITEM_BACK_COLOR_F+0
+            MENUITEM "Green", MENU_ITEM_BACK_COLOR_F+1
+            MENUITEM "Pink", MENU_ITEM_BACK_COLOR_F+2
+            MENUITEM "Purple", MENU_ITEM_BACK_COLOR_F+3
+            MENUITEM "Blue", MENU_ITEM_BACK_COLOR_F+4
+            MENUITEM "Gray", MENU_ITEM_BACK_COLOR_F+5
+            MENUITEM "Charcoal", MENU_ITEM_BACK_COLOR_F+6
+            MENUITEM "Black", MENU_ITEM_BACK_COLOR_F+7
+            MENUITEM "White", MENU_ITEM_BACK_COLOR_F+8
+        }
+        MENUITEM "Close", MENU_ITEM_CLOSE
+    }
+}

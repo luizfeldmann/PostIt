@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1595451598 source:d:\developer\postit\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<stdint.h>
+	"resources.h"
+	<commdlg.h>
+	"Shlwapi.h"
+
+1595123853 source:d:\developer\postit\icon.rc
+
+1595360750 source:d:\developer\postit\menu.rc
+
+1595437157 source:d:\developer\postit\resources.rc
+	"resources.h"
+
+1595387382 d:\developer\postit\resources.h
+
